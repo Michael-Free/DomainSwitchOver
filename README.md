@@ -28,4 +28,8 @@ Once this file has propogated out to all machines in your domain - you will want
 `JoinDomain.exe` will run, join the domain and restart the computer again.  If it doesn't kick in - try logging into each machine as the Local Administrator and it should start executing.
 
 ## Step 6 - Ask for a raise
-congrats! you've saved yourself from having to drive out to a bajillion remote locations and manually switch over each computer.  You've saved yourself a bunch of headaches.  You've also saved your organization a bunch of time and money. Thank me later.
+Congrats! You've saved yourself from having to drive out to a bajillion remote locations and manually switch over each computer.
+
+You've saved yourself a bunch of headaches... and you've also saved your organization a bunch of time and money. 
+
+Thank me later (coffee is always welcome).
