@@ -20,3 +20,12 @@ Remember that the current `C:\SwitchDomain` directory on your own local computer
 ## Step 4 - Create A File Push Group Policy
 In preparation for your switch over to the new domain controller, you will want to push `config.encrypted` as well as `JoinDomain.exe` and `UnjoinDomain.exe` to all machines in your domain to `C:\Switchdomain`. Here's a tutorial on how that is done: http://woshub.com/copy-files-on-all-computers-group-policy/
 
+## Step 5 - The Big Switch
+On the day of your big switch-over, create one last file push group policy with `private_key.pem` going to `C:\SwitchDomain`... preferably in off-hours. Use the link in Step 4 handle that.
+
+Once this file has propogated out to all machines in your domain - you will want to create one last Group Policy to run a scheduled task of `UnjoinDomain.exe`.  Once it starts to run, it will immediately unjoin the domain, and set `JoinDomain.exe` to run once on the next boot and restart the computer.
+
+`JoinDomain.exe` will run, join the domain and restart the computer again.  If it doesn't kick in - try logging into each machine as the Local Administrator and it should start executing.
+
+## Step 6 - Ask for a raise
+congrats! you've saved yourself from having to drive out to a bajillion remote locations and manually switch over each computer.  You've saved yourself a bunch of headaches.  You've also saved your organization a bunch of time and money. Thank me later.
