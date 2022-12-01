@@ -18,5 +18,5 @@ Run the `CreateKeysEncrypt.exe` file.  This will create a SHA256 key pair found 
 Remember that the current `C:\SwitchDomain` directory on your own local computer you dont want to push out just yet.
 
 ## Step 4 - Create A File Push Group Policy
-In preparation for your switch over to the new domain controller, you will want to push `config.encrypted` as well as `JoinDomain.exe` and `UnjoinDomain.exe` to all machines in your domain. Here's a tutorial on how that is done: http://woshub.com/copy-files-on-all-computers-group-policy/
+In preparation for your switch over to the new domain controller, you will want to push `config.encrypted` as well as `JoinDomain.exe` and `UnjoinDomain.exe` to all machines in your domain to `C:\Switchdomain`. Here's a tutorial on how that is done: http://woshub.com/copy-files-on-all-computers-group-policy/
 
